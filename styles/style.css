@@ -1,65 +1,64 @@
 *{
     margin: 0;
     padding: 0;
-
-
-}
-
-
-h1{
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  h1{
     color: royalblue;
-}
-
-nav{
+  }
+  
+  nav{
     display: flex;
     background-color: rgb(47, 59, 96);
-    
-}
-
-nav > svg{
-    color: white;
-    width:32xp ;
-}
-
-nav > ul{
+    height: 50px;
+  }
+  
+  nav > svg {
+    display: none;
+  }
+  
+  nav > ul {
     display: flex;
-
-}
-
-nav > ul > li, nav a{
+  }
+  
+  nav > ul > li, nav a{
+    color:whitesmoke;
+    padding: 15px;
+  }
+  
+  #menu-button{
     color: white;
-    padding: 0 15px;
-    list-style: none;
-}
-
-@media (max-widht: 600px){
+    font-size: 40px;
+  }
+  
+  /* ctrl  + F5 */
+  /* hot raload */
+  
+  @media (max-width:600px){
     nav > svg{
-        display: block;
-        fill: white;
-        width: 25px;
-
+      display: block;
+      fill: white;
+      width: 25px;
     }
-
+  
     nav > ul{
-        flex-direction: column;
-        position: absolute;
-        background-color: rgb(65, 83, 130);
-        top:50xp;
-        min-width: 50%;
-        min-height: 100vh;
-        left: 0;
-        transition: all .2s ease-in-out;
+      flex-direction: column;
+      position: absolute;
+      background-color: rgb(68, 83, 130);
+      top:50px;
+      min-width: 50%;
+      min-height: 100vh;
+  
+      transition: all .2s ease-in-out ;
     }
-    
-}
-
-
-/* 
-Créer un "navbar.js" et le lier avec 'navbar.php'.
-
-//1. Sélectionner le bouton du menu et lui ajouter un 'eventListener()'
-//2. Selectionner le menu:
-//  2.1 Si left est a 0px, on change a -100%
-//  2.2 sinon on change a 0px
-
-*/
+  }
+  
+  /* 
+  Créer un "navbar.js" et ajouter la balise '<script>' dans 'navbar.php'.
+  //1. Sélectionner le bouton du menu et lui ajouter un 'eventListener()'
+  //2. Selectionner le menu:
+  //  2.1 Si left est a 0px, on change a -100%
+  //  2.2 sinon on change a 0px
+  */

@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<?php 
-include_once "./composents/head.php"
-?>
-<body>
-<?php 
-$title="Acceuil";
-    include_once "./composents/navbar.php";
+<html lang="en">
+  <?php
+    $title="Page de profil";
+    include_once "./composents/head.php";
+  ?>
+  <body>
+    <?php
+      include_once "./composents/navbar.php";
     ?>
-    
-</body>
+    <h1>Votre page de profil</h1>
+  </body>
 </html>
-    
-    
